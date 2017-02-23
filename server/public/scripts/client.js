@@ -7,6 +7,10 @@ $(document).ready(function () {
     url: '/bios',
     success: function(response){
       console.log('response: ', response);
+      $('#container').append(
+        '<div class="phish"><img src="image.jpg" alt=""><h2>name</h2><p>bio</p></div>'
+      );
+
     }
   })
 
