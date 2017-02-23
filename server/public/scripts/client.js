@@ -4,7 +4,7 @@ $(document).ready(function () {
   console.log('jquery.js is sourced!');
   $.ajax({
     type: 'GET',
-    url: '/people',
+    url: '/bios',
     success: function(response){
       console.log('response: ', response);
     }
