@@ -7,11 +7,14 @@ $(document).ready(function () {
     url: '/bios',
     success: function(response){
       console.log('response: ', response);
-      $('#container').append(
-        '<div class="phish"><img src="image.jpg" alt=""><h2>name</h2><p>bio</p></div>'
-      );
+      for (var i = 0; i < response.length; i++) {
+        $('#container').append(
+          '<div class="phish">' + response[i].image + '<h2>' + response[i].name + '</h2><p>' + response[i].bio + '</p></div>'
+        );
+      }//ends our for loop
 
-    }
+
+    }//ends success
   })
 
 });
