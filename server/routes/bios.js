@@ -1,5 +1,5 @@
 
-var phishPeople = [{name: 'Phil', bio: 'I like long walks on the beach.', image: 'image.png'}, {name: 'Celina', bio: 'I like pina coladas.', image: 'image2.png'}, {name: 'Arri', bio: 'Check out these things! Arent they great?!', image:'image3.png'}, {name: 'Ed', bio:'beware of stingrays', image: 'image4.png' }];
+var phishPeople = [{name: 'Phil', bio: 'I like long walks on the beach.', image: './assets/images/_phil.jpeg'}, {name: 'Celina', bio: 'I like pina coladas.', image: './assets/images/_celina.png'}, {name: 'Arri', bio: 'Check out these things! Arent they great?!', image:'./assets/images/_arrielle.jpeg'}, {name: 'Ed', bio:'beware of stingrays', image: './assets/images/_ed.jpeg' }];
 
 
 

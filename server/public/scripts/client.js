@@ -8,13 +8,23 @@ $(document).ready(function () {
     success: function(response){
       console.log('response: ', response);
       for (var i = 0; i < response.length; i++) {
+        var personName = response[i].name;
         $('#container').append(
-          '<div class="phish">' + response[i].image + '<h2>' + response[i].name + '</h2><p>' + response[i].bio + '</p></div>'
+          '<div class="phish">' + '<img src="'+ response[i].image + '"/>' + '<h2>' + personName + '</h2><p>'
+         + response[i].bio + '</p><button class="likeButton" data-name="' + personName +'">LIKES &#128077;<span id="'+ personName +'Likes"></span></button></div>'
+
         );
       }//ends our for loop
 
 
     }//ends success
   })
-
+  $('#container').on('click', '.likeButton', function() {
+    console.log('Person was clicked: ' + $(this).data('name'));
+  });
 });
+
+$.ajax
+type: 'GET'
+url: '/likes'
+button click
