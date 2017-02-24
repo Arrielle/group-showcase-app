@@ -24,7 +24,7 @@ $(document).ready(function () {
   });
 });
 
-$.ajax
-type: 'GET'
-url: '/likes'
-button click
+// $.ajax
+// type: 'GET'
+// url: '/likes'
+// button click

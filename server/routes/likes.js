@@ -13,9 +13,9 @@ celina: 0
 
 
 // router.use(bodyParser.urlencoded({extended: true}));  // NOTE: NEEDED?
+//
+// router.get('/', function(req, res){
+//   res.send(likesObject);
+// });
 
-router.get('/', function(req, res){
-  res.send(likesObject);
-});
-
-module.exports = router;
+module.exports = likesObject;
