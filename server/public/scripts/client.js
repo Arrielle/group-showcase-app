@@ -21,12 +21,15 @@ $(document).ready(function () {
         console.log('pageLikes object logs: ', pageLikes);
         $('#' + clickedName +'Likes').text(likeCount);
 
+
+        //create an updated object object from previous data HOW TO DO??
+
         $.ajax({
           type: 'POST',
           url: '/likes',
-          data: likeCount,
+          data: //updated object goes here
           success: function(response){
-            object[person] = likeCount; //where the page is breaking
+            //post updated object
             console.log();
           } // end POST /likes function success
         }) // end ajax
