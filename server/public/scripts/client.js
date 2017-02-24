@@ -20,19 +20,18 @@ $(document).ready(function () {
         likeCount++;
         console.log('pageLikes object logs: ', pageLikes);
         $('#' + clickedName +'Likes').text(likeCount);
+        pageLikes[clickedName] = likeCount;
+        console.log('new object?', pageLikes);
 
-
-        //create an updated object object from previous data HOW TO DO??
-
-        $.ajax({
-          type: 'POST',
-          url: '/likes',
-          data: //updated object goes here
-          success: function(response){
-            //post updated object
-            console.log();
-          } // end POST /likes function success
-        }) // end ajax
+        // $.ajax({
+        //   type: 'POST',
+        //   url: '/likes',
+        //   data: pageLikes
+        //   success: function(response){
+        //     //post updated object
+        //     console.log();
+        //   } // end POST /likes function success
+        // }) // end ajax
 
       }); // end #container.on(click)
     } // end GET /likes function success

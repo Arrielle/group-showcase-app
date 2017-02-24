@@ -11,9 +11,17 @@ celina: 0
 };
 
 function likesObjectFunc (req, res) {
-
   res.send(likesObject);
 }
+
+router.get('/', function likesObjectFunc (req, res) {
+  res.send(likesObject);
+});
+
+// router.post('/', function likesObjectFunc (req, res) {
+//   res.send(likesObject);
+// });
+
 
 
 // router.use(bodyParser.urlencoded({extended: true}));  // NOTE: NEEDED?
