@@ -10,6 +10,10 @@ ed: 0,
 celina: 0
 };
 
+function likesObjectFunc (req, res) {
+
+  res.send(likesObject);
+}
 
 
 // router.use(bodyParser.urlencoded({extended: true}));  // NOTE: NEEDED?
@@ -18,4 +22,4 @@ celina: 0
 //   res.send(likesObject);
 // });
 
-module.exports = likesObject;
+module.exports = likesObjectFunc;
