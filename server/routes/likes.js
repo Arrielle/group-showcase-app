@@ -18,9 +18,10 @@ router.get('/', function likesObjectFunc (req, res) {
   res.send(likesObject);
 });
 
-// router.post('/', function likesObjectFunc (req, res) {
-//   res.send(likesObject);
-// });
+router.post('/', function likesObjectFunc (req, res) {
+  likesObject = response;
+  console.log(likesObject);
+});
 
 
 

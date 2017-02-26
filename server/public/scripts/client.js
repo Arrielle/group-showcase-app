@@ -23,15 +23,15 @@ $(document).ready(function () {
         pageLikes[clickedName] = likeCount;
         console.log('new object?', pageLikes);
 
-        // $.ajax({
-        //   type: 'POST',
-        //   url: '/likes',
-        //   data: pageLikes
-        //   success: function(response){
-        //     //post updated object
-        //     console.log();
-        //   } // end POST /likes function success
-        // }) // end ajax
+        $.ajax({
+          type: 'POST',
+          url: '/likes',
+          data: pageLikes,
+          success: function(response){
+            //post updated objects
+            console.log();
+          } // end POST /likes function success
+        }) // end ajax
 
       }); // end #container.on(click)
     } // end GET /likes function success
